@@ -4,7 +4,11 @@
     box-sizing: border-box;
 }
 
-.dark-mode{
+body, nav{
+    transition: all 0.2s;
+}
+
+body.dark-mode{
     background-color: black;
     color: white;
 }
