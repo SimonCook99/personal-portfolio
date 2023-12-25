@@ -9,8 +9,8 @@ body, nav{
 }
 
 body.dark-mode{
-    background-color: black;
-    color: white;
+    background-color: #222222;
+    color: #f6f6f6;
 }
 
 header .ms_header{
@@ -29,7 +29,7 @@ header .ms_toggle label {
     width: 50px;
     height: 20px;
     position: relative;
-    background-color: rgb(207, 207, 207);
+    background-color: #cfcfcf;
     border-radius: 10px;
     display: block;
 }
@@ -55,4 +55,8 @@ header .ms_toggle #toggle{
     justify-content: center;
     align-items: center;
     color: black;
+}
+
+nav ul.dropdown-menu.show{
+    left: -10px;
 }
