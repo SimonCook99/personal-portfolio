@@ -72,3 +72,7 @@ body.dark-mode #jumbotron{
     filter: brightness(0.7);
     transition: filter 0.2s;
 }
+
+#projects .card{
+    transition: all 0.2s;
+}
