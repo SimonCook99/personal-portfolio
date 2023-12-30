@@ -73,6 +73,19 @@ body.dark-mode #jumbotron{
     transition: filter 0.2s;
 }
 
+#about i{
+    font-size: 80px;
+}
+
+#about svg{
+    fill: #222222;
+    transition: all 0.2s;
+}
+
+body.dark-mode #about svg{
+    fill: #f6f6f6;
+}
+
 #projects .card{
     transition: all 0.2s;
 }
