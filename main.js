@@ -31,3 +31,7 @@ toggle_checkbox.addEventListener("change", function(){
 
 })
 
+Fancybox.bind('[data-fancybox]', {
+    //
+  }); 
+
