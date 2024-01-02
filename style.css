@@ -91,7 +91,7 @@ body.dark-mode #about svg{
 }
 
 #projects .card img{
-    max-height: 350px;
+    height: 350px;
     object-fit: cover;
     object-position: top left;
 }

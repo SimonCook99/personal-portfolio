@@ -31,7 +31,20 @@ toggle_checkbox.addEventListener("change", function(){
 
 })
 
-Fancybox.bind('[data-fancybox]', {
-    //
+//configurazione toolbar fancybox sezione progetti
+Fancybox.bind('[data-fancybox="gallery"]', {
+    Toolbar: {
+        display: {
+          
+          right: [
+            "zoomIn",
+            "zoomOut",
+            "toggle1to1",
+            "fullscreen",
+            "thumbs",
+            "close"
+          ],
+        },
+    },
   }); 
 
