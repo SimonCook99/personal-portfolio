@@ -32,7 +32,17 @@ toggle_checkbox.addEventListener("change", function(){
 })
 
 //configurazione toolbar fancybox sezione progetti
-Fancybox.bind('[data-fancybox="gallery"]', {
+Fancybox.bind('[data-fancybox]', {
+
+    contentClick: "iterateZoom",
+    /* Images:{ //configurazione movimento immagine con mouse dopo lo zoom dell'immagine
+        Panzoom: {
+            panMode: "mousemove",
+            mouseMoveFactor: 1.1,
+            mouseMoveFriction: 0.12
+        },
+    }, */
+
     Toolbar: {
         display: {
           

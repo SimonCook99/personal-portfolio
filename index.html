@@ -25,7 +25,7 @@
 
     <header>
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="navbar">
+        <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Navbar</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,9 +67,10 @@
     <main>
 
       <!--inizio sezione jumbotron-->
-      <section id="jumbotron" class="container-fluid">
+      <section id="jumbotron" class="container-fluid g-0">
 
-        <div class="row">
+        <div class="blur"></div>
+        <div class="row ms_jumbotron">
           <div class="col-12">
             
             <h1 class="text-center m-5">test</h1>
@@ -190,13 +191,15 @@
               <div class="card-body">
                 <h5 class="card-title">Playstation</h5>
                 <p class="card-text">Riproduzione del sito web ufficiale di Sony playstation</p>
-                <a href="img/playstation/playstation.png" class="btn btn-primary" data-fancybox="gallery" data-caption="playstation (laptop view)">mostra dettagli</a>
+                <a href="img/playstation/playstation.png" class="btn btn-primary" data-fancybox="gallery-a" data-caption="playstation (laptop view)">mostra dettagli</a>
               </div>
               <div class="d-none img-fluid">
-                <img src="img/playstation/screenshot_pLaystation_replica-md.png" data-caption="playstation (tablet view)" data-fancybox="gallery" alt="playstation md">
-                <img src="img/playstation/screenshot_pLaystation_replica-sm.png" data-caption="playstation (smartphone view)" data-fancybox="gallery" alt="playstation sm">
-                <img src="img/playstation/screenshot_pLaystation_replica-xs.png" data-caption="playstation (smaller view)" data-fancybox="gallery" alt="playstation xs">
+                <img src="img/playstation/screenshot_pLaystation_replica-md.png" data-caption="playstation (tablet view)" data-fancybox="gallery-a" alt="playstation md">
+                <img src="img/playstation/screenshot_pLaystation_replica-sm.png" data-caption="playstation (smartphone view)" data-fancybox="gallery-a" alt="playstation sm">
+                <img src="img/playstation/screenshot_pLaystation_replica-xs.png" data-caption="playstation (smaller view)" data-fancybox="gallery-a" alt="playstation xs">
               </div>
+
+              <p class="details">Tecnologie utilizzate: <strong>HTML - CSS - JS - Bootstrap</strong></p>
             </div>
           </div>
 
@@ -210,9 +213,10 @@
               <div class="card-body">
                 <h5 class="card-title">Spotify</h5>
                 <p class="card-text">Riproduzione dell'applicativo di spotify web</p>
-                <a href="img/spotify.png" class="btn btn-primary" data-fancybox="gallery" data-caption="Spotify Default view">mostra dettagli</a>
+                <a href="img/spotify.png" class="btn btn-primary" data-fancybox="gallery-b" data-caption="Spotify Default view">mostra dettagli</a>
               </div>
               
+              <p class="details">Tecnologie utilizzate: <strong>HTML - CSS - JS</strong></p>
             </div>
           </div>
 
@@ -225,11 +229,13 @@
               <div class="card-body">
                 <h5 class="card-title">Avada food</h5>
                 <p class="card-text">Progetto web di metà corso avada food con l'uso di Vue CLI</p>
-                <a href="img/midterm (avada food).png" class="btn btn-primary" data-fancybox="gallery" data-caption="Avada food default view">mostra dettagli</a>
+                <a href="img/midterm (avada food).png" class="btn btn-primary" data-fancybox="gallery-c" data-caption="Avada food default view">mostra dettagli</a>
               </div>
+              <p class="details">Tecnologie utilizzate: <strong>HTML - CSS - JS - Vue CLI</strong></p>
             </div>
           </div>
-                    
+          
+
         </div>
       </section>
       <!--fine sezione progetti-->
