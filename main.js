@@ -34,13 +34,18 @@ toggle_checkbox.addEventListener("change", function(){
 //configurazione toolbar fancybox sezione progetti
 Fancybox.bind('[data-fancybox]', {
 
-    contentClick: "iterateZoom",
+    contentClick: "toggleCover",
+    hideScrollbar: false,
     /* Images:{ //configurazione movimento immagine con mouse dopo lo zoom dell'immagine
         Panzoom: {
             panMode: "mousemove",
             mouseMoveFactor: 1.1,
             mouseMoveFriction: 0.12
         },
+    }, */
+
+    /* Images: {
+        initialSize: "cover",
     }, */
 
     Toolbar: {

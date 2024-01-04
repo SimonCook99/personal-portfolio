@@ -86,7 +86,7 @@ body.dark-mode #jumbotron .blur{
     transition: filter 0.2s;
 }
 
-#about{
+#about, #projects{
     padding-top: 20px;
 }
 #about i{
@@ -107,7 +107,7 @@ body.dark-mode #about svg{
 }
 
 #projects .card img{
-    height: 350px;
+    height: 210px; /* 350px*/
     object-fit: cover;
     object-position: top left;
 }
@@ -115,4 +115,9 @@ body.dark-mode #about svg{
 #projects .card p.details{
     font-size: 11px;
     color: gray;
+    margin: -5px 10px 15px 10px;
+}
+
+#projects .card p.card-text{
+    text-align: left;
 }
