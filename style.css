@@ -122,8 +122,13 @@ body.dark-mode #about svg{
     text-align: left;
 }
 
-
 #certifications .ms_first_card{
     display: flex;
     justify-content: center;
+}
+
+#certifications .card img{
+    height: 300px;
+    object-fit: cover;
+    object-position: top left;
 }
