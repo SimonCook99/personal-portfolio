@@ -86,7 +86,7 @@ body.dark-mode #jumbotron .blur{
     transition: filter 0.2s;
 }
 
-#about, #projects{
+#about, #projects, #certifications{
     padding-top: 20px;
 }
 #about i{
@@ -120,4 +120,10 @@ body.dark-mode #about svg{
 
 #projects .card p.card-text{
     text-align: left;
+}
+
+
+#certifications .ms_first_card{
+    display: flex;
+    justify-content: center;
 }
