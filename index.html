@@ -18,6 +18,9 @@
     <!--link Fancybox (popup slide)-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
 
+    <!--link lite-yt-embed per alleggerire i video di youtube nella pagina (script js collegato)-->
+    <link rel="stylesheet" href="resources/lite-yt-embed.css">
+    
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -194,7 +197,7 @@
             <!--card singolo progetto, immagine "CUT" di preview e caricamento immagine full size se l'utente clicca su mostra dettagli-->
             <div class="card mx-auto my-3" style="width: 18rem;">
               
-              <img src="img/Previews/playstation_CUT.webp" class="card-img-top img-fluid" alt="sito playstation">
+              <img src="img/Previews/playstation_CUT.webp" class="card-img-top img-fluid" alt="sito playstation" loading="lazy">
 
               
               <div class="card-body">
@@ -216,7 +219,7 @@
             
             <div class="card mx-auto my-3" style="width: 18rem;">
               
-              <img src="img/spotify.webp" class="card-img-top img-fluid" alt="sito spotify web" width="286px" height="230px">
+              <img src="img/spotify.webp" class="card-img-top img-fluid" alt="sito spotify web" width="286px" height="230px" loading="lazy">
 
               
               <div class="card-body">
@@ -233,7 +236,7 @@
             
             <div class="card mx-auto my-3" style="width: 18rem;">
               
-              <img src="img/Previews/midterm (avada food)_CUT.webp" class="card-img-top img-fluid" alt="progetto midterm corso 'avada food' (Vue CLI)">
+              <img src="img/Previews/midterm (avada food)_CUT.webp" class="card-img-top img-fluid" alt="progetto midterm corso 'avada food' (Vue CLI)" loading="lazy">
               
               <div class="card-body">
                 <h5 class="card-title">Avada food</h5>
@@ -248,7 +251,7 @@
             
             <div class="card mx-auto my-3" style="width: 18rem;">
               
-              <img src="img/Previews/discord_CUT.webp" class="card-img-top img-fluid" alt="progetto discord">
+              <img src="img/Previews/discord_CUT.webp" class="card-img-top img-fluid" alt="progetto discord" loading="lazy">
               
               <div class="card-body">
                 <h5 class="card-title">Discord</h5>
@@ -263,7 +266,7 @@
             
             <div class="card mx-auto my-3" style="width: 18rem;">
               
-              <img src="img/Previews/dropbox_CUT.webp" class="card-img-top img-fluid" alt="progetto dropbox">
+              <img src="img/Previews/dropbox_CUT.webp" class="card-img-top img-fluid" alt="progetto dropbox" loading="lazy">
               
               <div class="card-body">
                 <h5 class="card-title">Dropbox</h5>
@@ -278,7 +281,7 @@
             
             <div class="card mx-auto my-3" style="width: 18rem;">
               
-              <img src="img/deliveboo.webp" class="card-img-top img-fluid" alt="progetto finale corso deliveboo">
+              <img src="img/deliveboo.webp" class="card-img-top img-fluid" alt="progetto finale corso deliveboo" loading="lazy">
               
               <div class="card-body">
                 <h5 class="card-title">Deliveboo</h5>
@@ -300,10 +303,10 @@
         <div class="row text-center justify-content-center">
 
           <!--Offset di 1 applicato solo alle card sul lato sinistro quando si vede la pagina da PC-->
-          <div class="col-12 col-md-6 col-lg-5 offset-0 offset-lg-1 ms_first_card">
+          <div class="col-12 col-md-6 col-lg-5 ms_first_card">
             <div class="card my-4">
-              <a href="certifications/Certificato boolean.jpg" data-fancybox="gallery-g">
-                <img src="certifications/Certificato boolean.jpg" class="card-img-top img-fluid ms_centerFit" alt="certificato corso boolean">
+              <a href="certifications/Certificato boolean.webp" data-fancybox="gallery-g">
+                <img src="certifications/Certificato boolean.webp" class="card-img-top img-fluid ms_centerFit" alt="certificato corso boolean">
               </a>
             </div>
             <!-- <button data-fancybox data-src="./certifications/Certificato boolean.pdf" data-type="pdf">mostra</button> -->
@@ -314,24 +317,24 @@
           <!--posiziono le card sul lato destro verso sinitra (justify-content: flex-start;) quando si vede la pagina da PC-->
           <div class="col-12 col-md-6 col-lg-5 justify-content-lg-start ms_first_card">
             <div class="card my-4">
-              <a href="certifications/certificato Unity Jobformazione.jpg" data-fancybox="gallery-g">
-                <img src="certifications/certificato Unity Jobformazione.jpg" class="card-img-top img-fluid" alt="certificato corso boolean">
+              <a href="certifications/certificato Unity Jobformazione.webp" data-fancybox="gallery-g">
+                <img src="certifications/certificato Unity Jobformazione.webp" class="card-img-top img-fluid" alt="certificato corso boolean">
               </a>
             </div>
           </div>
 
-          <div class="col-12 col-md-6 col-lg-5 offset-0 offset-lg-1 ms_first_card">
+          <div class="col-12 col-md-6 col-lg-5 ms_first_card">
             <div class="card my-4">
-              <a href="certifications/CS50G.jpg" data-fancybox="gallery-g">
-                <img src="certifications/CS50G.jpg" class="card-img-top img-fluid" alt="certificato corso boolean">
+              <a href="certifications/CS50G.webp" data-fancybox="gallery-g">
+                <img src="certifications/CS50G.webp" class="card-img-top img-fluid" alt="certificato corso boolean">
               </a>
             </div>
           </div>
 
           <div class="col-12 col-md-6 col-lg-5 justify-content-lg-start ms_first_card">
             <div class="card my-4">
-              <a href="certifications/Certificato Experis.jpg" data-fancybox="gallery-g">
-                <img src="certifications/Certificato Experis.jpg" class="card-img-top img-fluid" alt="certificato corso boolean">
+              <a href="certifications/Certificato Experis.webp" data-fancybox="gallery-g">
+                <img src="certifications/Certificato Experis.webp" class="card-img-top img-fluid" alt="certificato corso boolean">
               </a>
             </div>
           </div>
@@ -346,19 +349,29 @@
         <div class="row text-center justify-content-center">
 
           <div class="col-12 col-lg-6 my-4">
-            <iframe width="500" height="281" src="https://www.youtube.com/embed/M44Q5E7LWc0?si=a5Q_NnVng8JgO470" 
+
+            <!-- METODO CONDIVISIONE IFRAME "CLASSICO" DI YT -->
+            <!-- <iframe width="550" height="310" src="https://www.youtube.com/embed/M44Q5E7LWc0?si=a5Q_NnVng8JgO470" 
               title="YouTube video player" frameborder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
               allowfullscreen>
-            </iframe>
+            </iframe> -->
+
+            <lite-youtube videoid="M44Q5E7LWc0" params="controls=1"></lite-youtube>
+
           </div>
 
           <div class="col-12 col-lg-6 my-4">
-            <iframe width="500" height="281" src="https://www.youtube.com/embed/LoJbGl6CPzs?si=I1M7ErAVqRoASCT5" 
+
+            <!-- METODO CONDIVISIONE IFRAME "CLASSICO" DI YT -->
+            <!--<iframe width="550" height="310" src="https://www.youtube.com/embed/LoJbGl6CPzs?si=I1M7ErAVqRoASCT5" 
             title="YouTube video player" frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
             allowfullscreen>
-            </iframe>
+            </iframe> -->
+
+            <lite-youtube videoid="LoJbGl6CPzs" params="controls=1"></lite-youtube>
+
           </div>
 
         </div>
@@ -377,6 +390,8 @@
     <!-- <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="resources/lite-yt-embed.js"></script>
+    
 
 
     <script src="main.js"></script>

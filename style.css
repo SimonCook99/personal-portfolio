@@ -141,3 +141,11 @@ body.dark-mode #about svg{
 #certifications .card img.ms_centerFit{ /* classe specifica "ms_centerFit" per il certificato boolean che, essendo verticale, è più ideale vederne la parte centrale*/
     object-position: center;
 }
+
+
+@media (max-width: 1200px) { /*modifica dinamica per le miniature dei video con lo schermo < 1200px (xl breakpoint) */
+    #Games_Other iframe{
+        width: calc(480px - 1rem);
+        height: calc(270px - 1rem);
+    }
+}
