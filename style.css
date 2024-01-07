@@ -86,7 +86,7 @@ body.dark-mode #jumbotron .blur{
     transition: filter 0.2s;
 }
 
-#about, #projects, #certifications{
+#about, #projects, #certifications, #Games_Other{
     padding-top: 20px;
 }
 #about i{
@@ -127,8 +127,17 @@ body.dark-mode #about svg{
     justify-content: center;
 }
 
+#certifications .card{
+    width: 500px;
+    height: 281px;
+}
+
 #certifications .card img{
-    height: 300px;
+    height: 281px;
     object-fit: cover;
     object-position: top left;
+}
+
+#certifications .card img.ms_centerFit{ /* classe specifica "ms_centerFit" per il certificato boolean che, essendo verticale, è più ideale vederne la parte centrale*/
+    object-position: center;
 }
