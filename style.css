@@ -158,3 +158,13 @@ body.dark-mode #about svg{
         height: calc(270px - 1rem);
     }
 }
+
+footer{
+    background-color: black;
+    padding: 20px 0px;
+}
+
+footer p{
+    color: white;
+    margin: 0;
+}
