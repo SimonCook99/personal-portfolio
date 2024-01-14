@@ -10,11 +10,11 @@ body, nav{
 
 body.dark-mode{
     background-color: #222222;
-    color: #e5e0d8d9;
+    color: #e5e0d8;
 }
 
 body header a.nav-link{ /*shadow sui tasti della navbar per maggior contrasto e visibilità sul resto del sito */
-    text-shadow: 0 1px #e5e0d8d9;
+    text-shadow: 0 1px #e5e0d8;
     transition: all 0.2s;
 }
 
@@ -95,11 +95,101 @@ body.dark-mode #jumbotron .blur{
     transition: filter 0.2s;
 }
 
+#jumbotron .contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+#jumbotron .contacts a{
+    color: #222222;
+    text-decoration: none;
+    transition: all 0.2s;
+    padding: 20px;
+    position: relative;
+}
+
+#jumbotron .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+body.dark-mode #jumbotron .contacts a{
+    color: #e5e0d8;
+}
+
+#jumbotron i{
+    font-size: 40px;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+#jumbotron .contacts .icon:hover i{
+    font-size: 45px;
+    transition: all 0.2s;
+}
+
+#jumbotron button.ms_CVbutton {
+    align-items: center;
+    background-image: linear-gradient(40deg, rgba(57,245,0,1) 20%, rgba(13,110,253,1) 60%);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 18px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+#jumbotron .ms_CVbutton:active,button.ms_CVbutton:hover {
+    outline: 0;
+}
+   
+#jumbotron .ms_CVbutton span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+
+#jumbotron .ms_CVbutton:hover span {
+    background: none;
+}
+
+#jumbotron .ms_CVbutton:active {
+    transform: scale(0.9);
+}
+
+#jumbotron .ms_CV{
+    display: flex;
+    justify-content: center;
+    margin: 25px 0px;
+}
+
 #about, #projects, #certifications, #Games_Other{
     padding-top: 20px;
 }
 #about i{
     font-size: 80px;
+}
+#about h5{
+    line-height: 30px;
 }
 
 #about svg{
@@ -160,8 +250,10 @@ body.dark-mode #about svg{
 }
 
 footer{
-    background-color: black;
-    padding: 20px 0px;
+    background-color: #273036;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
 }
 
 footer p{
