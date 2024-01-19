@@ -132,14 +132,15 @@ body.dark-mode #jumbotron .contacts a{
     transition: all 0.2s;
 }
 
-#jumbotron button.ms_CVbutton {
+/*inizio modifiche bottone download CV*/
+#about button.ms_CVbutton {
     align-items: center;
     background-image: linear-gradient(40deg, rgba(57,245,0,1) 20%, rgba(13,110,253,1) 60%);
     border: 0;
     border-radius: 8px;
     box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
     box-sizing: border-box;
-    color: #FFFFFF;
+    color: #222222;
     display: flex;
     font-family: Phantomsans, sans-serif;
     font-size: 18px;
@@ -152,38 +153,47 @@ body.dark-mode #jumbotron .contacts a{
     touch-action: manipulation;
     white-space: nowrap;
     cursor: pointer;
-    transition: all .2s;
+    /*transition: all 0.2s; */
 }
 
-#jumbotron .ms_CVbutton:active,button.ms_CVbutton:hover {
+#about .ms_CVbutton:active,button.ms_CVbutton:hover, body.dark-mode button.ms_CVbutton:hover, body.dark-mode .ms_CVbutton:active{
     outline: 0;
 }
    
-#jumbotron .ms_CVbutton span {
-    background-color: rgb(5, 6, 45);
+#about .ms_CVbutton span {
+    background-color: #ffffff; /* background-color: rgb(5, 6, 45);*/
     padding: 16px 24px;
     border-radius: 6px;
     width: 100%;
     height: 100%;
-    transition: 300ms;
+    transition: all 0.2s;
 }
 
-#jumbotron .ms_CVbutton:hover span {
+body.dark-mode #about .ms_CVbutton span{
+    background-color: #222222;
+}
+
+body.dark-mode #about .ms_CVbutton{
+    color: #ffffff;
+}
+
+#about .ms_CVbutton:hover span,  body.dark-mode #about .ms_CVbutton:hover span{
     background: none;
 }
 
-#jumbotron .ms_CVbutton:active {
+#about .ms_CVbutton:active {
     transform: scale(0.9);
 }
 
-#jumbotron .ms_CV{
+#about .ms_CV{
     display: flex;
     justify-content: center;
     margin: 25px 0px;
 }
+/*fine modifiche bottone download CV*/
 
 #about, #projects, #certifications, #Games_Other{
-    padding-top: 20px;
+    padding-top: 25px;
 }
 #about i{
     font-size: 80px;

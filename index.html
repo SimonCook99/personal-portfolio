@@ -100,21 +100,17 @@
               </div>
 
             </div>
-
-            <div class="ms_CV">
-              <button class="ms_CVbutton"><span>Scarica il mio CV</span></button>
-            </div>
           </div>
         </div>
       </section>
       <!--fine sezione jumbotron-->
 
       <!--inizio sezione about me-->
-      <section class="container" id="about">
+      <section class="container mb-5" id="about">
         <h1 class="text-center my-5">Chi sono</h1>
         <div class="row">
           <div class="col-12 col-md-7"> 
-            <h5 class="mb-4">
+            <h5 class="mb-5">
               Sono una persona appassionata di tecnologia e di
               informatica in generale, e questa passione mi ha
               permesso di ampliare le mie conoscenze in questo
@@ -123,6 +119,10 @@
               ho appreso competenze su diverse tecnologie e linguaggi,
               principalmente per quanto riguarda web e game development.
             </h5>
+
+            <div class="ms_CV">
+              <button class="ms_CVbutton"><span>Scarica il mio CV</span></button>
+            </div>
           </div>
           <div class="col-12 col-md-5 text-center mb-4">
 
@@ -213,9 +213,57 @@
       </section>
       <!--fine sezione about me-->
 
+      <!--inizio sezione certificati-->
+      <section class="container mb-4" id="certifications">
+        <h1 class="text-center my-4">Formazione e certificati</h1>
+        <p class="text-center mt-2 mb-4">Di seguito alcuni dei certificati da me ottenuti a seguito dei corsi di formazione frequentati</p>
+        <div class="row text-center justify-content-center">
+
+          <!--Offset di 1 applicato solo alle card sul lato sinistro quando si vede la pagina da PC-->
+          <div class="col-12 col-md-6 col-lg-5 ms_first_card">
+            <div class="card my-4">
+              <a href="certifications/Certificato boolean.webp" data-fancybox="gallery-g">
+                <img src="certifications/Certificato boolean.webp" class="card-img-top img-fluid ms_centerFit" alt="certificato corso boolean">
+              </a>
+            </div>
+            <!-- <button data-fancybox data-src="./certifications/Certificato boolean.pdf" data-type="pdf">mostra</button> -->
+            <!-- <iframe src="certifications/Certificato boolean.pdf" width="100%" height="500px" frameborder="0"></iframe> -->
+            <!-- <embed src="certifications/Certificato boolean.pdf" type="application/pdf"> -->
+          </div>
+          
+          <!--posiziono le card sul lato destro verso sinitra (justify-content: flex-start;) quando si vede la pagina da PC-->
+          <div class="col-12 col-md-6 col-lg-5 justify-content-lg-start ms_first_card">
+            <div class="card my-4">
+              <a href="certifications/certificato Unity Jobformazione.webp" data-fancybox="gallery-g">
+                <img src="certifications/certificato Unity Jobformazione.webp" class="card-img-top img-fluid" alt="certificato corso boolean">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-5 ms_first_card">
+            <div class="card my-4">
+              <a href="certifications/CS50G.webp" data-fancybox="gallery-g">
+                <img src="certifications/CS50G.webp" class="card-img-top img-fluid" alt="certificato corso boolean">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-5 justify-content-lg-start ms_first_card">
+            <div class="card my-4">
+              <a href="certifications/Certificato Experis.webp" data-fancybox="gallery-g">
+                <img src="certifications/Certificato Experis.webp" class="card-img-top img-fluid" alt="certificato corso boolean">
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!--fine sezione certificati-->
+
       <!--inizio sezione progetti-->
-      <section class="container" id="projects">
-        <h1 class="text-center my-5">Progetti</h1>
+      <section class="container mb-3" id="projects">
+        <h1 class="text-center mt-5 mb-3">Progetti</h1>
+        <p class="text-center mt-2 mb-4">Di seguito alcuni dei progetti principali da me svolti sia per apprendimento che per piacere personale :)</p>
         <div class="row text-center justify-content-center">
           <div class="col-12 col-md-6 col-lg-4">
             
@@ -338,52 +386,6 @@
         </div>
       </section>
       <!--fine sezione progetti-->
-
-      <!--inizio sezione certificati-->
-      <section class="container" id="certifications">
-        <h1 class="text-center my-5">Formazione e certificati</h1>
-        <div class="row text-center justify-content-center">
-
-          <!--Offset di 1 applicato solo alle card sul lato sinistro quando si vede la pagina da PC-->
-          <div class="col-12 col-md-6 col-lg-5 ms_first_card">
-            <div class="card my-4">
-              <a href="certifications/Certificato boolean.webp" data-fancybox="gallery-g">
-                <img src="certifications/Certificato boolean.webp" class="card-img-top img-fluid ms_centerFit" alt="certificato corso boolean">
-              </a>
-            </div>
-            <!-- <button data-fancybox data-src="./certifications/Certificato boolean.pdf" data-type="pdf">mostra</button> -->
-            <!-- <iframe src="certifications/Certificato boolean.pdf" width="100%" height="500px" frameborder="0"></iframe> -->
-            <!-- <embed src="certifications/Certificato boolean.pdf" type="application/pdf"> -->
-          </div>
-          
-          <!--posiziono le card sul lato destro verso sinitra (justify-content: flex-start;) quando si vede la pagina da PC-->
-          <div class="col-12 col-md-6 col-lg-5 justify-content-lg-start ms_first_card">
-            <div class="card my-4">
-              <a href="certifications/certificato Unity Jobformazione.webp" data-fancybox="gallery-g">
-                <img src="certifications/certificato Unity Jobformazione.webp" class="card-img-top img-fluid" alt="certificato corso boolean">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-5 ms_first_card">
-            <div class="card my-4">
-              <a href="certifications/CS50G.webp" data-fancybox="gallery-g">
-                <img src="certifications/CS50G.webp" class="card-img-top img-fluid" alt="certificato corso boolean">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-5 justify-content-lg-start ms_first_card">
-            <div class="card my-4">
-              <a href="certifications/Certificato Experis.webp" data-fancybox="gallery-g">
-                <img src="certifications/Certificato Experis.webp" class="card-img-top img-fluid" alt="certificato corso boolean">
-              </a>
-            </div>
-          </div>
-
-        </div>
-      </section>
-      <!--fine sezione certificati-->
 
       <!--inizio sezione giochi/mods/altro-->
       <section class="container" id="Games_Other">
