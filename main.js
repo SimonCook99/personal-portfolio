@@ -61,5 +61,28 @@ Fancybox.bind('[data-fancybox]', {
           ],
         },
     },
-  }); 
+});
+
+
+//configurazione animazioni con lo scroll della pagina
+let sections = document.querySelectorAll(".ms_animation");
+
+sections[0].classList.add("animating");
+
+window.onscroll = () => {
+    sections.forEach (section => {
+        let top = window.scrollY;
+        console.log("Barra : " + top);
+        let offset = section.offsetTop - 500;
+        console.log("offset : " + offset)
+        let height = section.offsetHeight;
+        console.log("height : " + height);
+
+        if(top >= offset && top < offset + height){
+            section.classList.add("animating");
+        }
+    })
+
+
+}
 

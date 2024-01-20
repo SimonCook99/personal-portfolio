@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+/* main{
+    overflow: hidden;
+} */
+
 body, nav{
     transition: all 0.2s;
 }
@@ -202,6 +206,11 @@ body.dark-mode #about .ms_CVbutton{
     line-height: 30px;
 }
 
+/* #about .ms_skills{
+    position: relative;
+    top: 10px;
+} */
+
 #about svg{
     fill: #222222;
     transition: all 0.2s;
@@ -270,3 +279,65 @@ footer p{
     color: white;
     margin: 0;
 }
+
+
+
+/*INIZIO SEZIONE ANIMAZIONI IN SCROLL*/
+    main{
+        overflow: hidden;
+    }
+
+    #jumbotron .ms_animation{
+        transform: translateY(100px);
+        filter: blur(5px);
+        opacity: 0;
+        transition: transform 1s, filter 1s, opacity 1s;
+    }
+
+    #jumbotron .ms_animation.animating{
+        transform: translateY(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+
+    #about h1.ms_animation{
+        transform: translateY(80px);
+        filter: blur(5px);
+        opacity: 0;
+        transition: transform 1s, filter 1s, opacity 1s;
+    }
+
+    #about h1.ms_animation.animating{
+        transform: translateY(0);
+        filter: blur(0);
+        opacity: 1;
+        transition: transform 1s, filter 1s, opacity 1s;
+    }
+
+    #about .ms_description.ms_animation{
+        transform: translateX(-100%);
+        filter: blur(5px);
+        opacity: 0;
+        transition: transform 1s, filter 1s, opacity 1s;
+    }
+
+    #about .ms_description.ms_animation.animating{
+        transform: translateX(0);
+        filter: blur(0);
+        opacity: 1;
+        transition: transform 1s, filter 1s, opacity 1s;
+    }
+
+    #about .ms_skills.ms_animation{
+        transform: translateX(100%);
+        filter: blur(5px);
+        opacity: 0;
+        transition: transform 1s, filter 1s, opacity 1s;
+    }
+
+    #about .ms_skills.ms_animation.animating{
+        transform: translateX(0);
+        filter: blur(0);
+        opacity: 1;
+        transition: transform 1s, filter 1s, opacity 1s;
+    }
