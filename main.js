@@ -69,7 +69,27 @@ let sections = document.querySelectorAll(".ms_animation");
 
 sections[0].classList.add("animating");
 
-window.onscroll = () => {
+
+window.addEventListener("scroll", function(){
+
+    //altezza della finestra
+    let innerHeight = this.window.innerHeight;
+
+    sections.forEach(section => {
+
+        //coordinata top della singola sezione
+        let sectionHeight = section.getBoundingClientRect().top;
+
+        //se l'altezza della finestra supera la cima
+        if(sectionHeight < innerHeight - 100){
+            section.classList.add("animating");    
+        }
+    })
+
+})
+
+
+/* window.onscroll = () => {
     sections.forEach (section => {
         let top = window.scrollY;
         console.log("Barra : " + top);
@@ -84,5 +104,5 @@ window.onscroll = () => {
     })
 
 
-}
+} */
 
