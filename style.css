@@ -89,7 +89,7 @@ nav ul.dropdown-menu.show{
 
 #jumbotron .ms_jumbotron{
     position: absolute;
-    top: 50px;
+    top: 100px;
     left: 50%;
     transform: translate(-50%);
 }
@@ -207,8 +207,9 @@ body.dark-mode #about .ms_CVbutton{
 #about i{
     font-size: 80px;
 }
-#about h5{
+#about p{
     line-height: 30px;
+    font-size: 18px;
 }
 
 /* #about .ms_skills{
@@ -285,7 +286,13 @@ footer{
 
 footer p{
     color: white;
-    margin: 0;
+    margin: 0 5px;
+}
+
+@media (max-width: 400px) { /*modifica dinamica per le miniature dei video con lo schermo < 1200px (xl breakpoint) */
+    footer p{
+        font-size: 7px;
+    }
 }
 
 
