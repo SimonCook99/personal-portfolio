@@ -78,6 +78,12 @@ nav ul.dropdown-menu.show{
     left: -10px;
 }
 
+#jumbotron{
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 #jumbotron .blur{
     background: rgb(13,110,253);
     background: linear-gradient(40deg, rgba(13,110,253,1) 35%, rgba(57,245,0,1) 100%);
@@ -93,6 +99,17 @@ nav ul.dropdown-menu.show{
     left: 50%;
     transform: translate(-50%, -50%);
     /* margin: 0px 20px; */
+}
+
+#jumbotron .ms_jumbotron h1{
+    font-weight: 600;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+#jumbotron .ms_jumbotron p{
+    font-weight: 300;
+    font-size: 20px;
+    font-style: italic;
 }
 
 body.dark-mode #jumbotron .blur{
