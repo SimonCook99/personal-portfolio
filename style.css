@@ -319,6 +319,12 @@ footer p{
         transform: translate(0%, -50%);
         margin: 0px 20px;
     }
+
+    #jumbotron .ms_animation{
+        transform: translateY(0)!important;
+        filter: blur(0)!important;
+        opacity: 1!important;
+    }
 }
 
 
