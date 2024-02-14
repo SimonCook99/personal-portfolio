@@ -320,11 +320,11 @@ footer p{
         margin: 0px 20px;
     }
 
-    #jumbotron .ms_animation{
+    /* #jumbotron .ms_animation{
         transform: translateY(0)!important;
         filter: blur(0)!important;
         opacity: 1!important;
-    }
+    } */
 }
 
 
