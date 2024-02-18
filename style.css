@@ -105,7 +105,19 @@ nav ul.dropdown-menu.show{
     font-weight: 600;
     font-size: 55px;
     margin-bottom: 10px;
+    white-space: nowrap;
 }
+
+#jumbotron .ms_jumbotron h1 span{
+    background: linear-gradient(40deg, rgba(57,245,0,1) 0%, rgba(13,110,253,1) 65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: darkblue;
+    -webkit-text-stroke-width: 1px;
+    /* border: 2px solid black; */
+    /* text-shadow: 0 0 3px black, 0 0 5px black; */
+}
+
 #jumbotron .ms_jumbotron p{
     font-weight: 300;
     font-size: 20px;
@@ -318,6 +330,11 @@ footer p{
         left: 0%;
         transform: translate(0%, -50%);
         margin: 0px 20px;
+    }
+
+    #jumbotron .ms_jumbotron h1{
+        font-size: 65px;
+        white-space: normal;
     }
 
     /* #jumbotron .ms_animation{
