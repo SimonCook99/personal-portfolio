@@ -110,6 +110,7 @@ nav ul.dropdown-menu.show{
 
 #jumbotron .ms_jumbotron h1 span{
     background: linear-gradient(40deg, rgba(57,245,0,1) 0%, rgba(13,110,253,1) 65%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-color: darkblue;
@@ -333,7 +334,7 @@ footer p{
     }
 
     #jumbotron .ms_jumbotron h1{
-        font-size: 65px;
+        font-size: 60px;
         white-space: normal;
     }
 
