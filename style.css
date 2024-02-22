@@ -113,10 +113,15 @@ nav ul.dropdown-menu.show{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-color: darkblue;
+    -webkit-text-stroke-color: #222222;
     -webkit-text-stroke-width: 1px;
+    transition: all 0.2s;
     /* border: 2px solid black; */
     /* text-shadow: 0 0 3px black, 0 0 5px black; */
+}
+
+body.dark-mode #jumbotron .ms_jumbotron h1 span{
+    -webkit-text-stroke-color: #e5e0d8b3; /* rgb(229 224 216 / 70%) */
 }
 
 #jumbotron .ms_jumbotron p{
