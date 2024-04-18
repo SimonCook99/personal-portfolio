@@ -36,18 +36,6 @@ Fancybox.bind('[data-fancybox]', {
 
     contentClick: "toggleCover",
     hideScrollbar: false,
-    /* Images:{ //configurazione movimento immagine con mouse dopo lo zoom dell'immagine
-        Panzoom: {
-            panMode: "mousemove",
-            mouseMoveFactor: 1.1,
-            mouseMoveFriction: 0.12
-        },
-    }, */
-
-    /* Images: {
-        initialSize: "cover",
-    }, */
-
     Toolbar: {
         display: {
           
@@ -67,12 +55,10 @@ Fancybox.bind('[data-fancybox]', {
 //configurazione animazioni con lo scroll della pagina
 let sections = document.querySelectorAll(".ms_animation");
 
-
-//richiamo la funzione dedicata sia all'evento di scroll che all'avvio/refresh della pagina
+//richiamo la funzione dedicata (scrollanimation) sia all'evento di scroll che all'avvio/refresh della pagina
 scrollAnimation();
 
 window.addEventListener("scroll", scrollAnimation);
-
 
 //funzione che gestisce l'animazione di scroll delle sezioni in base all'altezza della finestra del browser
 function scrollAnimation(){
@@ -91,21 +77,4 @@ function scrollAnimation(){
         }
     })
 }
-
-
-//VECCHIA FUNZIONE DI SCROLL
-/* window.onscroll = () => {
-    sections.forEach (section => {
-        let top = window.scrollY;
-        console.log("Barra : " + top);
-        let offset = section.offsetTop - 500;
-        console.log("offset : " + offset)
-        let height = section.offsetHeight;
-        console.log("height : " + height);
-
-        if(top >= offset && top < offset + height){
-            section.classList.add("animating");
-        }
-    })
-} */
 
