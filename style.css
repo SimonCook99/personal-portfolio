@@ -26,7 +26,7 @@ header nav{
     backdrop-filter: blur(5px);
 }
 
-header .ms_header{
+header .ms_header{ /* ms_ nelle classi sta per "my style" e indica quindi una classe di stile creata da me*/
     justify-content: flex-end;
 }
 
@@ -163,7 +163,7 @@ body.dark-mode #jumbotron .contacts a{
 }
 
 /*inizio modifiche bottone download CV*/
-#about button.ms_CVbutton {
+#about a.ms_CVbutton {
     align-items: center;
     background-image: linear-gradient(40deg, rgba(57,245,0,1) 20%, rgba(13,110,253,1) 60%);
     border: 0;
@@ -185,7 +185,7 @@ body.dark-mode #jumbotron .contacts a{
     cursor: pointer;
 }
 
-#about .ms_CVbutton:active,button.ms_CVbutton:hover, body.dark-mode button.ms_CVbutton:hover, body.dark-mode .ms_CVbutton:active{
+#about .ms_CVbutton:active,a.ms_CVbutton:hover, body.dark-mode a.ms_CVbutton:hover, body.dark-mode .ms_CVbutton:active{
     outline: 0;
 }
    
