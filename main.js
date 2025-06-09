@@ -52,6 +52,18 @@ Fancybox.bind('[data-fancybox]', {
 });
 
 
+// Configurazione chiusura hamburger menu da mobile quando clicchi in un punto dello schermo fuori dal menu stesso
+document.addEventListener("click", function(event) {
+    let navbarCollapse = document.querySelector(".navbar-collapse");
+
+    //controllo se il menu a tendina è aperto, e che il click dell'utente sia fuori dal menu
+    if(navbarCollapse.classList.contains("show") && !navbarCollapse.contains(event.target)) {
+        let navbarToggler = document.querySelector(".navbar-toggler");
+        navbarToggler.click(); //forzo un click del toggle per chiudere il menu
+    }
+
+});
+
 //configurazione animazioni con lo scroll della pagina
 let sections = document.querySelectorAll(".ms_animation");
 
